@@ -1,0 +1,17 @@
+AM^kabc^Los Angeles
+AM^karn^Little Rock
+AM^wbap^Dallas
+AM^wlac^Nashville
+AM^wls^Chicago
+AM^wpgp^Pittsburgh
+FM^karn^Little Rock
+FM^klal^Little Rock
+FM^kurb^Little Rock
+FM^wfan^New York
+FM^wkim^Memphis
+FM^wpze^Atlanta
+FM^kupd^Phoneix
+
+
+
+

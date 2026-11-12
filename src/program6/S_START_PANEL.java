@@ -4,18 +4,19 @@ import javax.swing.*;
 import java.awt.*;
 
 public class S_START_PANEL extends JPanel{
-
+    public static String CREATE_ACC_BUTTON = "Create";
+    public static String LOGIN_ACC_BUTTON = "login";
     public S_START_PANEL(intScreenControl ic){
         // Create the information label.
         JLabel label = new JLabel("Account Information", JLabel.CENTER);
         // Create the login button.
-        JButton loginButton = new JButton("Login");
+        JButton loginButton = new JButton(LOGIN_ACC_BUTTON);
         loginButton.addActionListener(ic);
         JPanel loginButtonBuffer = new JPanel();
         loginButtonBuffer.add(loginButton);
 
         // Create the create account button.
-        JButton createButton = new JButton("Create");
+        JButton createButton = new JButton(CREATE_ACC_BUTTON);
         createButton.addActionListener(ic);
         JPanel createButtonBuffer = new JPanel();
         createButtonBuffer.add(createButton);

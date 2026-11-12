@@ -12,6 +12,23 @@ public class intScreenControl implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println(e.getActionCommand() + "number for create " + RadioTuner.S_CREATE);
+
+
+        String event = e.getActionCommand();
+
+
+        if(event.equals(S_START_PANEL.CREATE_ACC_BUTTON)){
+            System.out.println();
+            CardLayout cardLayout = (java.awt.CardLayout) container.getLayout();
+            cardLayout.show(container,String.valueOf(RadioTuner.S_CREATE));
+        }
+
+        if(event.equals(S_START_PANEL.LOGIN_ACC_BUTTON)){
+            System.out.println();
+            CardLayout cardLayout = (java.awt.CardLayout) container.getLayout();
+            cardLayout.show(container,String.valueOf(RadioTuner.S_LOGIN));
+        }
+
+
     }
 }

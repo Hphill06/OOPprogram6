@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class RadioTuner extends JFrame {
-    public static String S_START = "0";
+    public static int S_START = 0;
     public static int S_LOGIN = 1;
     public static int S_CREATE = 2;
     public static int S_RADIO = 3;
@@ -46,18 +46,21 @@ public class RadioTuner extends JFrame {
 
     private JPanel CreateContainer(CardLayout cardLayout) {
         JPanel container = new JPanel(cardLayout);
-
-
         //create controllers
         intScreenControl ic = new intScreenControl(container);
-
+        loginScreenControl lc = new loginScreenControl(container);
+        createScreenControl cc = new createScreenControl(container);
+        radioScreenControl rc = new radioScreenControl(container);
+        //setup the panels for view
         JPanel startView = new S_START_PANEL(ic);
-//        JPanel createView= new S_CREATE_PANEL(ic);
-//        JPanel loginView= new S_LOGIN_PANEL(ic);
-//        JPanel radioView= new S_RADIO_PANEL(ic);
-
-
+        JPanel createView= new S_CREATE_PANEL(cc);
+        JPanel loginView = new S_LOGIN_PANEL(lc);
+        JPanel radioView = new S_RADIO_PANEL(rc);
+        //add to container (card layout)
         container.add(startView,String.valueOf(S_START));
+        container.add(createView,String.valueOf(S_CREATE));
+        container.add(loginView,String.valueOf(S_LOGIN));
+        container.add(radioView,String.valueOf(S_RADIO));
 
         return container;
     }

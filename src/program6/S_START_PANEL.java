@@ -4,8 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class S_START_PANEL extends JPanel{
-    public static String CREATE_ACC_BUTTON = "Create";
-    public static String LOGIN_ACC_BUTTON = "login";
+    public static final String CREATE_ACC_BUTTON = "Create";
+    public static final String LOGIN_ACC_BUTTON = "login";
     public S_START_PANEL(intScreenControl ic){
         // Create the information label.
         JLabel label = new JLabel("Account Information", JLabel.CENTER);

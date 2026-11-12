@@ -22,7 +22,7 @@ public class loginScreenControl implements ActionListener {
 
 
         if(event.equals(S_LOGIN_PANEL.LOGIN_SUBMIT_BUTTON)){
-            if(!isValidUserPass()){
+            if(!isPassInTextFile()){
                 S_LOGIN_PANEL.setError("The username and password are incorrect.");
             }else{
                 //if its a valid password, move to next screen.
@@ -34,7 +34,7 @@ public class loginScreenControl implements ActionListener {
             cardL.show(container,String.valueOf(RadioTuner.S_START));
         }
     }
-    private boolean isValidUserPass(){
+    public static boolean isPassInTextFile(){
         boolean valid = false;
         String user = S_LOGIN_PANEL.getUsername();
         String pass = S_LOGIN_PANEL.getPassword();

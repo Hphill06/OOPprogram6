@@ -38,7 +38,7 @@ public class createScreenControl implements ActionListener {
 
     private void addUserAccount(String username, String password) throws IOException {
         String str1 = username + "^" + password;
-        FileWriter fw = new FileWriter(RadioTuner.USERS_FILE);
+        FileWriter fw = new FileWriter(RadioTuner.USERS_FILE,true);
         BufferedWriter bw = new BufferedWriter(fw);
         bw.write(str1);
         bw.newLine();

@@ -36,7 +36,7 @@ public class RadioTuner extends JFrame {
         JPanel container = CreateContainer(cardLayout);
 
 
-        cardLayout.show(container, String.valueOf(S_RADIO));
+        cardLayout.show(container, String.valueOf(S_START));
 
         // Add the card layout container to the JFrame.
         this.add(container, BorderLayout.CENTER);

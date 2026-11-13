@@ -63,7 +63,7 @@ the users.txt file must be updated to contain the new username/password combinat
         String[] pssWrds = S_CREATE_PANEL.getPasswords();
         String user = S_CREATE_PANEL.getUsername();
 
-        if(pssWrds[0] != null && pssWrds[1] != null && user != null && !(user.equals(""))){
+        if(pssWrds[0] != null && pssWrds[1] != null && user != null && !(user.isEmpty())){
             if(!(pssWrds[0].equals(pssWrds[1])) && (!pssWrds[0].isEmpty())){ //if not equal break
                 S_CREATE_PANEL.setError("Passwords to not match");
 
@@ -92,7 +92,7 @@ the users.txt file must be updated to contain the new username/password combinat
 
 //        System.out.println("USERNAME EXSTS FUNCTION : " + user);
         try{
-            fr = new FileReader("C:\\Users\\hudso\\IdeaProjects\\OOPprogram6\\src\\program6\\users.txt");
+            fr = new FileReader(RadioTuner.USERS_FILE);
             BufferedReader br = new BufferedReader(fr);
             while(true){
                 try{

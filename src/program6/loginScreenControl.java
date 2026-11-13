@@ -39,7 +39,7 @@ public class loginScreenControl implements ActionListener {
         String pass = S_LOGIN_PANEL.getPassword();
         FileReader fr;
         try{
-            fr = new FileReader("C:\\Users\\hudso\\IdeaProjects\\OOPprogram6\\src\\program6\\users.txt");
+            fr = new FileReader(RadioTuner.USERS_FILE);
             BufferedReader br = new BufferedReader(fr);
             while(true){
                 try{

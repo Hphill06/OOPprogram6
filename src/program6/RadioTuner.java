@@ -10,7 +10,7 @@ public class RadioTuner extends JFrame {
     public static int S_RADIO = 3;
     private static int DEFAULT_W = 550;
     private static int DEFAULT_H = 350;
-
+    public static final String USERS_FILE = "src/program6/users.txt";
 
     public RadioTuner(){
 

@@ -1,5 +1,1 @@
-test^test
-jsmith@uca.edu^hello1234
-jsmith1@uca.edu^testpass1
-jsmith2@uca.edu^testpass2
-jsmith3@uca.edu^testpass3
+test2^123456

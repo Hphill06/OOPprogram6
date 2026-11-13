@@ -35,7 +35,6 @@ public class loginScreenControl implements ActionListener {
         }
     }
     public static boolean isPassInTextFile(){
-        boolean valid = false;
         String user = S_LOGIN_PANEL.getUsername();
         String pass = S_LOGIN_PANEL.getPassword();
         FileReader fr;

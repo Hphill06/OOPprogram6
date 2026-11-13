@@ -8,7 +8,6 @@ public class S_CREATE_PANEL extends JPanel{
     private static JTextField usernameField;
     private static JPasswordField passwordField;
     private static JPasswordField passwordConfirmField;
-    private static JPasswordField passwordAgainField;
     private static JLabel errorLabel;
     public static final String CREATE_SUBMIT_BUTTON = "Submit";
     public static final String CREATE_CANCEL_BUTTON = "Cancel";
@@ -24,7 +23,10 @@ public class S_CREATE_PANEL extends JPanel{
      */
     public static String[] getPasswords()
     {
-        return new String[]{passwordField.getText(),passwordAgainField.getText()};
+        if(passwordField.getText() != null && passwordConfirmField.getText() != null){
+            return new String[]{passwordField.getText(),passwordConfirmField.getText()};
+        }
+        return new String[]{"",""};
     }
 
     // Setter for the error text.
